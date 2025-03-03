@@ -146,7 +146,7 @@ var agecatCenters = { // Center locations of the bubbles.
 
 // Vierter Button: Bildschirmzeit
     
-  var screentimetextCenters = { // Center locations of the bubbles. 
+  var screentimeCenters = { // Center locations of the bubbles. 
     'weniger als 1h': { x: 220, y: height / 2 },
     '1h-2h': { x: 320, y: height / 2 },
     '2h-3h': { x: 430, y: height / 2 },
@@ -155,7 +155,7 @@ var agecatCenters = { // Center locations of the bubbles.
     'Mehr als 5h': { x: 770, y: height / 2 } 
   };
 
-  var screentimetextTitleX = {  // X locations of the year titles.
+  var screentimeTitleX = {  // X locations of the year titles.
     'bis 1h': 40,
     '1h bis 2h': 160,
     '2h bis 3h': 330,
@@ -225,8 +225,7 @@ var agecatCenters = { // Center locations of the bubbles.
         year: d.jahr,
         radius: radiusScale(+d.bszkat2), // Berechnung Radius für bubbles
         size: d.bszkat2,
-        screentime: d.bszkat,
-        screentimetext: d.bsz,
+        screentime: d.bsz,
           
         age: d.alter,
         agecat: d.kategoriealter,
